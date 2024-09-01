@@ -22,7 +22,10 @@
                 <% files.forEach((val) => { %>
                     <div class="task w-80 px-3 py-2 rounded-md bg-zinc-600">
                         <h1 class="text-white tracking-tighter text-2xl"> <%= val %> </h1>
-                        <a href="/file/<%= val%>" class="text-blue-600 mt-10 font-medium">Read More</a>
+                        <div class="flex w-full pt-3 justify-between">
+                            <a href="/file/<%= val%>" class="text-blue-600  font-medium">Read More</a>
+                            <a href="/edit/<%= val%>" class="text-zinc-800">Edit File Name </a>
+                        </div>
                     </div>
                 <% }) %>
             <% } else { %>

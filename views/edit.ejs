@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen w-full bg-zinc-800  text-white p-4">
+        <a href="/" class="text-blue-600 inline-block mb-10">Go back to Home </a>
+        <form action="/edit" method="post" >
+            <input type="text" class="block w-1/4 block rounded-xl bg-zinc-600 text-zinc-300  py-3 px-5 " name="previous"  placeholder="Previous Name" value="<%= filename %>" >
+            <textarea class="w-1/4 block bg-zinc-600 mt-2 mb-2 rounded-xl resize-none px-5 py-2 "name="new"  placeholder="New Name" ></textarea>
+            <input type="submit" class="bg-yellow-700 rounded-md mt-2 p-1 px-3" value="Update Name">
+        </form>
+    </div>
+</body>
+</html> 
